@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://kit.fontawesome.com/7fc72b81e2.js" crossorigin="anonymous"></script>
+  <title>Dog Categories</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+
+    }
+
+    .txt {
+      position: absolute;
+      top: 25%;
+      color: #fff;
+      padding: 10px;
+      font-size: x-large;
+      font-weight: bolder;
+      text-align: center;
+      display: flex;
+      margin-left: 50%;
+      margin-top: 5%;
+
+    }
+
+    .card {
+      border: 1px solid gray;
+      transition: transform 0.3s ease-in-out;
+      display: inline-block;
+      margin-bottom: 10px;
+      size: 1px;
+      margin-left: 30px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: rgb(255, 255, 255);
+    }
+
+
+
+    .dropdown-menu .dropdown-item:hover {
+      color: rgb(0, 0, 0);
+    }
+
+    .dropdown-menu .dropdown-item:active {
+      background-color: #0f531c;
+      color: white;
+    }
+
+    .card-subtitle {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card-text {
+      color: #555;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+
+    .card-text {
+      flex-grow: 1;
+    }
+
+    .btn {
+      text-align: center;
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .nav-linku {
+      margin-left: 240px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-gradient" style="background-color: #0f531c;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="Home.html"><i class="fa-solid fa-dog"></i> PATRONA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="Home.html"><i class="fa-solid fa-house"></i>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Categories.html"><i class="fa-solid fa-list"></i> Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Breeds.html"><i class="fa-solid fa-shield-dog"></i> Breedinfo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-screwdriver-wrench"></i> Catalog
+            </a>
+            <ul class="dropdown-menu bg-gradient" style="background-color: #0f531c;">
+              <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+              <li><a class="dropdown-item" href="Services.html">SERVICES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Gallery.html"><i class="fa-regular fa-address-card"></i> Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Contact.html"><i class="fa-solid fa-circle-user me-1"></i> Contact
+              us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <div class="container text-center">
+      <ul class="navbar-nav  mx-auto">
+        <li class="nav-item">
+          <label class="nav-linku" for="countryFilter"></label>
+          <select class="form-control" id="countryFilter">
+            <option value="all">All Countries</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Scotland">Scotland</option>
+            <option value="Siberia">Siberia</option>
+            <option value="Croatia">Croatia</option>
+
+          </select>
+        </li>
+        <li class="nav-item">
+          <label class="nav-linku" for="breedFilter"></label>
+          <select class="form-control" id="breedFilter">
+            <option value="all">All Breeds</option>
+            <option value="Labrador">Labrador Retriever</option>
+            <option value="Corgi">Pembroke Welsh Corgi</option>
+            <option value="Shepherd">Shepherd</option>
+            <option value="Husky">Husky</option>
+            <option value="Pug">Pug</option>
+            <option value="Pitbull">Pitbull</option>
+            <option value="Pointer">Pointer</option>
+            <option value="Dalmatian">Dalmatian</option>
+            <option value="Bulldog">Bulldog</option>
+            <option value="Poodle">Poodle</option>
+
+
+
+          </select>
+        </li>
+        <li class="nav-item">
+          <label class="nav-linku" for="colorFilter"></label>
+          <select class="form-control" id="colorFilter">
+            <option value="all">All Colors</option>
+            <option value="Brown">Brown</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Gray">Gray</option>
+            <option value="Red">Red</option>
+            <option value="Tan">Tan</option>
+
+          </select>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container md-4">
+    <h1 class="text-center mb-4 mt-4">Dog Categories</h1>
+
+    <div class="card-columns text-center">
+
+      <div class="card" data-country="usa" data-breed="labrador" data-color="brown"
+        style="max-width: 300px; min-width: 300px; max-height: 450px; min-height: 450px;">
+        <img src="Pic14.png" class="card-img-top" alt="Dog Image">
+        <div class="card-body">
+          <h5 class="card-title">Category 1</h5>
+          <p class="card-subtitle">Country: United States</p>
+          <p class="card-subtitle">Breed: Labrador Retriever</p>
+          <p class="card-subtitle">Color: Brown</p>
+        </div>
+
+
+        <div class="card" data-country="uk" data-breed="corgi" data-color="white"
+          style="max-width: 300px; min-width: 300px; max-height: 450px; min-height: 450px;">
+          <img src="Pic1.jpg" class="card-img-top" alt="Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Category 2</h5>
+            <p class="card-subtitle">Country: United Kingdom</p>
+            <p class="card-subtitle">Breed: Pembroke Welsh Corgi</p>
+            <p class="card-subtitle">Color: White</p>
+            <p class="card-text">Special Note: Pembroke Welsh Corgis are known for their intelligence and affectionate
+              nature. They have distinctive short legs and are often associated with the British royal family.</p>
+          </div>
+        </div>
+
+        <div class="card" data-country="aus" data-breed="shepherd" data-color="black"
+          style="max-width: 300px; min-width: 300px; max-height: 450px; min-height: 450px;">
+          <img src="Pic3.jpg" class="card-img-top" alt="Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Category 3</h5>
+            <p class="card-subtitle">Country: Australia</p>
+            <p class="card-subtitle">Breed: Australian Shepherd</p>
+            <p class="card-subtitle">Color: Black</p>
+            <p class="card-text">Special Note: Australian Shepherds are known for their intelligence and agility. They
+              are
+              often used in herding and are energetic, making them great companions for active individuals or families.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-country="jap" data-breed="husky" data-color="white"
+          style="max-width: 300px; min-width: 300px; max-height: 450px; min-height: 450px;">
+          <img src="Pic3.jpg" class="card-img-top" alt="Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Category 3</h5>
+            <p class="card-subtitle">Country: Japan</p>
+            <p class="card-subtitle">Breed: Siberian Husky</p>
+            <p class="card-subtitle">Color: White</p>
+            <p class="card-text">Special Note: Huskies are known for their captivating,
+              almond-shaped eyes that can come in a variety of colors, including blue, brown, green, and amber.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-country="Germany" data-breed="pug" data-color="red"
+          style="max-width: 300px; min-width: 300px; max-height: 450px; min-height: 450px;">
+          <img src="Pic3.jpg" class="card-img-top" alt="Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Category 3</h5>
+            <p class="card-subtitle">Country: Germany</p>
+            <p class="card-subtitle">Breed: Pug</p>
+            <p class="card-subtitle">Color:Red</p>
+            <p class="card-text">Special Note: Pugs are known for their distinctive appearance and charming personality,
+              but one special thing about them is their wrinkled face.
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="card" data-country="ger" data-breed="shepherd" data-color="brown"
+          style="max-width: 300px; min-width: 300px; max-height: 450px; min-height: 450px;">
+          <img src="Pic3.jpg" class="card-img-top" alt="Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Category 3</h5>
+            <p class="card-subtitle">Country: France</p>
+            <p class="card-subtitle">Breed: Pitbull</p>
+            <p class="card-subtitle">Color: Black</p>
+            <p class="card-text">Special Note:One special thing about Pit Bulls is their remarkable loyalty and
+              affectionate nature towards their human companions. Despite their sometimes intimidating appearance,
+              Pit Bulls are known for forming strong bonds with their families.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <footer class="text-center text-lg-start text-white bg-gradient" style="background-color: #0f531c;">
+    <div class="container p-4 pb-0">
+      <section class="">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              PATRONA
+            </h6>
+            <p>
+              "Bark to Brilliance: Where Tails Wag and Hearts Melt!"
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> North Karachi, Karachi, Pakistan</p>
+            <p><i class="fas fa-envelope mr-3"></i> contactus@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +92 111 211301</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                class="fab fa-twitter"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                class="fab fa-google"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                class="fab fa-instagram"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white text-decoration-none" href="#">Patrona.com</a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      function renderCards(selectedCountry, selectedBreed, selectedColor) {
+
+        $('.card-columns').empty();
+
+
+        const cards = [
+          { country: 'United Kingdom', breed: 'Labrador', color: 'Brown', image: 'categoriesimages/c1.jpg', title: 'Category 1', specialNote: '' },
+          { country: 'United Kingdom', breed: 'Corgi', color: 'White', image: 'categoriesimages/c5.jpg', title: 'Category 4', specialNote: '' },
+          { country: 'Australia', breed: 'Shepherd', color: 'Black', image: 'categoriesimages/c8.jpg', title: 'Category 7', specialNote: '' },
+          { country: 'Siberia', breed: 'Husky', color: 'White', image: 'categoriesimages/c6.jpg', title: 'Category 10', specialNote: '' },
+          { country: 'China', breed: 'Pug', color: 'Red', image: 'categoriesimages/c3.jpg', title: 'Category 2', specialNote: '' },
+          { country: 'France', breed: 'Poodle', color: 'black', image: 'categoriesimages/c12.jpg', title: 'Category 5', specialNote: '' },
+          { country: 'Germany', breed: 'Shepherd', color: 'Brown', image: 'categoriesimages/c2.jpg', title: 'Category 8', specialNote: '' },
+          { country: 'Siberia', breed: 'Husky', color: 'Black', image: 'categoriesimages/c10.jpg', title: 'Category 11', specialNote: '' },
+          { country: 'United Kingdom', breed: 'Pointer', color: 'Black', image: 'categoriesimages/c7.jpg', title: 'Category 3', specialNote: '' },
+          { country: 'Croatia', breed: 'Dalmatian', color: 'White', image: 'categoriesimages/c4.jpg', title: 'Category 6', specialNote: '' },
+          { country: 'Scotland', breed: 'Pitbull', color: 'Tan', image: 'categoriesimages/c9.jpg', title: 'Category 9', specialNote: '' },
+          { country: 'United States', breed: 'Bulldog', color: 'Gray', image: 'categoriesimages/c11.jpg', title: 'Category 12', specialNote: '' },
+        ];
+
+
+        cards.forEach(card => {
+          if ((selectedCountry === 'all' || card.country === selectedCountry) &&
+            (selectedBreed === 'all' || card.breed === selectedBreed) &&
+            (selectedColor === 'all' || card.color === selectedColor)) {
+            const cardHtml = `
+            <div class="card" data-country="${card.country}" data-breed="${card.breed}" data-color="${card.color}">
+  <img src="${card.image}" class="card-img-top" alt="Dog Image" style="height: 200px; width: 300px; float-left ">
+  <div class="card-body">
+    <h5 class="card-title">${card.title}</h5>
+    <p class="card-subtitle">Country: ${card.country}</p>
+    <p class="card-subtitle">Breed: ${card.breed}</p>
+    <p class="card-subtitle">Color: ${card.color}</p>
+    <p class="card-text">${card.specialNote}</p>
+    <button type="button" class="btn btn-outline-success">Adopt Now</button>
+  </div>
+</div>
+              </div>`;
+            $('.card-columns').append(cardHtml);
+          }
+        });
+      }
+
+
+      $("#countryFilter, #breedFilter, #colorFilter").change(function () {
+        var selectedCountry = $("#countryFilter").val();
+        var selectedBreed = $("#breedFilter").val();
+        var selectedColor = $("#colorFilter").val();
+
+
+        renderCards(selectedCountry, selectedBreed, selectedColor);
+      });
+
+
+      renderCards('all', 'all', 'all');
+    });
+  </script>
+
+</body>
+
+</html>

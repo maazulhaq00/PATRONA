@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fc72b81e2.js" crossorigin="anonymous"></script>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: rgb(255, 255, 255);
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .dropdown-menu .dropdown-item:active{
+            background-color:#0f531c;
+            color: white;
+        }
+
+        .txt {
+            position: absolute;
+            top: 25%;
+            color: #fff;
+            padding: 20px;
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            margin-left: 50%;
+            margin-top: 5%;
+
+        }
+
+        /* has */
+        .text {
+            text-align: center;
+        }
+
+        .card {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .text2 {
+            margin-top: 50px;
+        }
+    </style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-gradient" style="background-color: #0f531c;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="Home.html"><i class="fa-solid fa-dog"></i> PATRONA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="Home.html"><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Categories.html"><i class="fa-solid fa-list"></i> Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Breeds.html"><i class="fa-solid fa-shield-dog"></i> Breedinfo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-screwdriver-wrench"></i> Catalog
+                </a>
+                <ul class="dropdown-menu bg-gradient" style="background-color: #0f531c;">
+                  <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+                  <li><a class="dropdown-item" href="Services.html">SERVICES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Gallery.html"><i class="fa-regular fa-address-card"></i> Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Contact.html"><i class="fa-solid fa-circle-user me-1"></i> Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container my-5">
+        <h1 class="text">Top Picks and Pro Tips</h1>
+        <h2 class="text2">Finding for the good nutrition food? </h2>
+        <p>In the symphony of canine health, the first note is struck with nutrition. Start your furry friend's
+            journey with the finest melody of love and vitality
+            - a bowl filled with the best, highly recommended dog food. Because every wag deserves a nourishing
+            beginning.</p>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3" style="margin-top: 20px;">
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Jiminys</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p> A good dog food brand should have high-quality and easily digestible
+                            ingredients.
+                            Look for real meat as the primary ingredient and avoid excessive fillers, artificial
+                            preservatives, and additives.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col">
+                <div class="card">
+                    <img src="productsimages/food2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Power food</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>A good power food for dogs should provide a well-balanced combination of proteins, fats,
+                            carbohydrates, vitamins, and minerals to meet the unique dietary needs of dogs.
+                            good for health</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>lamas</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>If dogs and llamas are going to be together, supervision is essential, especially during
+                            initial introductions.
+                            This ensures the safety of both animals and allows you to gauge their reactions to each
+                            other.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Merrick</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Merrick is committed to using high-quality, real whole foods as the foundation of their
+                            recipes.
+                            They often include deboned meat as the first ingredient, ensuring a protein-rich diet for
+                            dogs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food6.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Wellness</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Provide a well-balanced and nutritionally complete diet suitable for your dog's age, size,
+                            and breed.
+                            Consult with a veterinarian to determine the appropriate type and amount of food for your
+                            dog's specific.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>RoyalCanin</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Royal Canin offers a wide range of breed-specific dog food formulas. Recognizing that
+                            different breeds have unique nutritional requirements,
+                            these formulas are designed to address specific health concerns.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Nutro</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Nutro is known for avoiding artificial preservatives, colors, and flavors in their dog food.
+                            This can be appealing to pet owners who prefer a more natural and holistic approach to their
+                            pet's best product. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/food8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Eukanuba</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p> Eukanuba offers a range of dog food formulas designed to meet the specific nutritional needs
+                            of dogs at different life stages.
+                            They have formulas for puppies, adults, and seniors, as well as breed-specific options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HasanRAZA  -->
+
+    <!-- <h1 style="font-family: 'Teko', sans-serif;"><u>Food item:</u></h1> -->
+    <div class="container mt-5">
+        <h1 class="text;"> Grooming Products</h1>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3" style="margin-top: 50px;">
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/shampoo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Bugalugs shampoo</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Check and highlight the key ingredients in Bugalugs shampoo.
+                            Look for natural and dog-friendly ingredients that promote a healthy coat and skin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col">
+                <div class="card">
+                    <img src="productsimages/Conditioner.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Bondi wash</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>Bondi Wash products for dogs typically contain natural ingredients.
+                        This can be appealing to pet owners who prefer products with fewer synthetic chemicals.
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/toothbrush.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Dental Care Kit</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Highlight the inclusion of a suitable toothbrush designed for dogs.
+                            It should have soft bristles and be appropriately sized for different breeds
+                            this kit is alltime best .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/hairdryer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Hair dryer</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Explain the purpose of a dog hair dryer. It is designed to quickly and
+                            efficiently dry a dog's coat after bathing or grooming, very beneficial for dogs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/Dogtowels.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Dog Towels</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p> The texture of dog towels is often soft and gentle, preventing any potential damage to
+                            the dog's fur or skin.
+                            This is particularly important for dogs with sensitive skin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/wips.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Grooming wipes</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Many grooming wipes are formulated with ingredients that are gentle on a dog's sensitive
+                            skin.
+                            They often contain hypoallergenic components for prevent skin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/EarCleaner.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Ear Cleaner</b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>Choose an ear cleaner specifically formulated for dogs.
+                            Avoid using human ear cleaners or solutions with harsh chemicals, as they may irritate a
+                            dog's sensitive ears.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="productsimages/FleaandTick.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Flea and Tick </b></h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-fill" style="color: rgb(255, 174, 0);"></i>
+                            <i class="bi bi-star-half" style="color: rgb(255, 174, 0);"></i>
+                        </div>
+                        <p>It can transmit various diseases and cause health problems in dogs.
+                            These can include skin irritations, allergic reactions, anemia (due to blood loss from
+                            flea bites), usefull </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="mb-4"> Grooming Ideas</h1>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="productsimages/grooming.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="productsimages/grooming2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="productsimages/grooming3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h6 class="mt-4"> Brushing:</h6>
+
+        <p>Regular brushing helps prevent matting, reduces shedding, and keeps the coat clean.
+            Use a brush suitable for your dog's coat type (slicker brush, bristle brush, comb, etc.).
+            Long-haired dogs may require daily brushing, while short-haired dogs can be brushed less frequently.</p>
+        <br>
+        <h6>Bathing</h6>
+
+        <p>Bathe your dog when necessary, typically every 2-3 months or as recommended by your vet.
+            Use a dog-specific shampoo to avoid skin irritation.
+            Be gentle, and make sure to rinse thoroughly to remove all shampoo residue. </p>
+        <br>
+        <h6>Ears:</h6>
+
+        <p>Check your dog's ears regularly for dirt, wax, or signs of infection.
+            Clean ears with a dog ear cleaner using a cotton ball or pad. Be gentle and avoid going too deep into the
+            ear canal.</p>
+        <br>
+        <h6>Teeth:</h6>
+
+        <p>Brush your dog's teeth regularly with a dog toothbrush and toothpaste.
+            Provide dental chews or toys to help keep teeth clean.</p>
+        <br>
+        <h6>Nails:</h6>
+        <p>Keep your dog's nails trimmed to a comfortable length.
+            Use dog nail clippers or a nail grinder, and be cautious not to cut into the quick (the sensitive tissue
+            inside the nail).</p>
+        <br>
+        <h6>Haircuts:</h6>
+        <p>Some breeds require regular haircuts, while others may need occasional trims.
+            Professional grooming may be necessary for certain breeds with specific coat types. </p>
+        <br>
+        <h6>Eye Care:</h6>
+        <p>Check your dog's eyes for discharge or redness.
+            Gently clean around the eyes with a damp, soft cloth if needed.</p>
+        <br>
+        <h6>Paw Care:</h6>
+        <p>Trim the hair around your dog's paw pads to prevent matting and discomfort.
+            Check for foreign objects, injuries, or signs of infection. </p>
+        <br>
+        <h6>Regular Vet Checkups:</h6>
+        <p class="mb-4">Regular veterinary visits are crucial for overall health, including the skin and coat.</p>
+        <br>
+    </div>
+
+    <footer class="text-center text-lg-start text-white bg-gradient" style="background-color: #0f531c;">
+        <div class="container p-4 pb-0">
+          <section class="">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  PATRONA
+                </h6>
+                <p>
+                  "Bark to Brilliance: Where Tails Wag and Hearts Melt!"
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> North Karachi, Karachi, Pakistan</p>
+                <p><i class="fas fa-envelope mr-3"></i> contactus@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +92 111 211301</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+    
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright:
+          <a class="text-white text-decoration-none" href="#">Patrona.com</a>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
